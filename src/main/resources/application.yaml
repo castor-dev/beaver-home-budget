@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: beaver-home-budget-spring
+
+---
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/beaver_home_budget_db
+    username: beaver_home_budget_adm
+    password: K28ND8Z7KwjCsb1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+---
+
+spring:
+  flyway:
+    schemas: beaver_home_budget_db
